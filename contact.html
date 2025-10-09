@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Mahfuza Meem</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header & Navigation -->
   <header>
-    <h1>Contact Me</h1>
+    <h1>Mahfuza Meem's Blog</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -18,54 +18,49 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <article>
-      <p>If you’d like to get in touch, fill out the form below. I’d love to hear from you!</p>
+    <section class="contact-form-section">
+      <h2>Get in Touch</h2>
+      <p>Have a question, want to say hi, or collaborate? Fill out the form below!</p>
 
-      <!-- Netlify Form -->
       <form name="contact" method="POST" data-netlify="true">
-        <!-- Hidden input for Netlify -->
-        <input type="hidden" name="form-name" value="contact">
-        <!-- Honeypot field for spam prevention -->
-        <p class="hidden">
-          <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-        </p>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-        <!-- Name -->
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="Mahfuza Meem" required><br><br>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-        <!-- Email -->
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" value="meemmahf@msu.edu" required><br><br>
+        <div class="form-row">
+          <label for="reason">Reason for Contact:</label>
+          <select id="reason" name="reason" required>
+            <option value="">--Choose--</option>
+            <option value="hi">Saying Hi</option>
+            <option value="contractor">Looking for a Contractor</option>
+            <option value="interview">Interested in an Interview</option>
+          </select>
+        </div>
 
-        <!-- Reason dropdown -->
-        <label for="reason">Reason for Contact:</label><br>
-        <select id="reason" name="reason" required>
-          <option value="">--Please choose an option--</option>
-          <option value="saying-hi">Saying Hi</option>
-          <option value="contractor">Looking for a Contractor</option>
-          <option value="interview">Interested in an Interview</option>
-        </select><br><br>
+        <div class="form-row">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-        <!-- Message -->
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-
-        <!-- Submit button -->
-        <button type="submit">Submit</button>
+        <div class="form-row">
+          <button type="submit">Send Message</button>
+        </div>
       </form>
-    </article>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mahfuza Meem</p>
   </footer>
 </body>
 </html>
-
 
     
 
