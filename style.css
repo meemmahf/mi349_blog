@@ -240,3 +240,51 @@ a {
   transition: 0.3s;
 }
 
+/* Mobile screens — 600px and below */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+}
+/* Tablet screens — 900px and below */
+@media (max-width: 900px) {
+
+  main {
+    display: block;
+  }
+
+  article {
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+}
